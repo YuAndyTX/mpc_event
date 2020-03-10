@@ -69,7 +69,6 @@
 }
 .timeline .timeline-item .timeline-panel {
   position: relative;
-  width: 46%;
   float: left;
   right: 16px;
   border: 1px solid #777777;
@@ -129,6 +128,7 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
 .timeline-horizontal .timeline-item {
   display: table-cell;
   height: 170px;

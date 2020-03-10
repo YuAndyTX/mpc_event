@@ -50,12 +50,13 @@
       let status = [false, false]
       setInterval(() => {
         let current = new Date().getTime()
-        let events = [
+        let events = [new Date("2020-03-29T13:00:00+07:00").getTime()]
+        /*let events = [
           new Date(2020, 0, 18, 15, 0, 0).getTime(),
           new Date(2020, 0, 19, 9, 0, 0).getTime()
-        ]
+        ]*/
 
-        for (let i=0; i<2; i++) {
+        for (let i=0; i<1; i++) {
           if (current < events[i]) {
             let diff = Math.floor((events[i] - current) / 1000)
             let days = Math.floor(diff / (3600*24));
@@ -83,14 +84,14 @@
     <div class="container-fluid contest-background">
       <div class="row bg-dark text-light py-5">
         <div class="col-md-10 offset-md-1 mb-3">
-          <h1>MPC Competitive Programming Contest C2 Tahun 2020</h1>
+          <h1>MPC Competitive Programming Contest C2 Year 2020</h1>
         </div>
 
         <div class="col-md-5 offset-md-1 mb-3">
           <h3>Next Event:</h3>
-		  <h4><marquee>Coming Soon</marquee></h4>
-          <!--<h4 id="event1">18 Jan (15:00 - 17:00) </br>- Briefing & Warming Up</h4>
-          <h4 id="event2" class="mt-3">19 Jan (09:00 - 17:00) </br>- Competition</h4>-->
+		  <!--<h4><marquee>Coming Soon</marquee></h4>-->
+          <h4 id="act"><span class="material-icons">today</span> 29 March (13:00 - 13:50) </br><span style="padding-left: 30px;">- Briefing & Warming Up</span></h4>
+          <h4 id="act" class="mt-3"><span class="material-icons">today</span> 29 March (14:00 - 17:30)</br><span style="padding-left: 30px;">- Competition</span></h4>
         </div>
         <div class="my-auto col-md-1 offset-md-1 mb-3">
           <h4 id="time-day" class="text-center bg-light text-dark py-3 rounded-pill">?</h4>
@@ -110,7 +111,7 @@
         </div>
 
         <div class="col-md-3 offset-md-3 mt-3 text-center">
-          <a href="http://bit.ly/mpc_regis" target="_blank" class="btn btn-block px-5 py-3 btn-success font-weight-bold disabled">Register</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScWDL_-RNa7rehZel0Vh0qOTMdb_qVvhbILct5kCYf7ihEvZw/viewform" target="_blank" class="btn btn-block px-5 py-3 btn-success font-weight-bold">Register</a>
         </div>
 
         <div id="changeable-button" class="col-md-3 mt-3 text-center">
@@ -143,17 +144,16 @@
       <div class="row py-3">
         <div class="col-md-6 offset-md-3">
           <h3>Timeline:</h3>
-		  <h3><marquee>Coming Soon</marquee></h3>
-        </div>
-		<!--
-        <div class="col-md-11 offset-md-1 col-xl-6 offset-xl-3">
+		  <!--<h3><marquee>Coming Soon</marquee></h3>
+        </div>-->
+        <div class="col-md-11 offset-md-1 col-xl-11 offset-xl-1">
           <div style="display:inline-block;width:100%;overflow-y:auto;">
             <ul class="timeline timeline-horizontal">
               <li class="timeline-item">
-                <div class="timeline-badge success"></div>
+                <div class="timeline-badge success"><span class="material-icons" style="padding-top: 12px;">event_available</span></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h5 class="timeline-title">19 Desember 2019</h5>
+                    <h5 class="timeline-title">09 Maret 2020</h5>
                   </div>
                   <div class="timeline-body">
                     <h6>Pembukaan Pendaftaran.</h6>
@@ -161,17 +161,17 @@
                 </div>
               </li>
               <li class="timeline-item">
-                <div class="timeline-badge success"></div>
+                <div class="timeline-badge success"><span class="material-icons" style="padding-top: 12px;">event_busy</span></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h5 class="timeline-title">16 Januari 2020</h5>
+                    <h5 class="timeline-title">27 Maret 2020</h5>
                   </div>
                   <div class="timeline-body">
                     <h6>Penutupan Pendaftaran.</h6>
                   </div>
                 </div>
               </li>
-              <li class="timeline-item">
+              <!--<li class="timeline-item">
                 <div class="timeline-badge success"></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -181,12 +181,12 @@
                     <h6>Briefing & Warming-up.</h6>
                   </div>
                 </div>
-              </li>
+              </li>-->
               <li class="timeline-item">
-                <div class="timeline-badge success"></div>
+                <div class="timeline-badge success"><span class="material-icons" style="padding-top: 12px;">laptop</span></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h5 class="timeline-title">19 Januari 2020</h5>
+                    <h5 class="timeline-title">29 Maret 2020</h5>
                   </div>
                   <div class="timeline-body">
                     <h6>Competition.</h6>
@@ -195,10 +195,10 @@
               </li>
             </ul>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
-
+  </div>
     <hr />
 
     <div class="container-fluid">
